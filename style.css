@@ -408,7 +408,7 @@ feature styling */
    
 }
 
-#banner h2,h4,button{
+#banner h2,button{
     margin-left: 20px;
 }
 
@@ -519,6 +519,22 @@ color: #0b0b0b;
       height: 55vh;
       
       background-size: cover;
+      display: flex;
+     justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      padding: 14px;
+      position: relative;
+    
+    }
+
+    #page-header-blog{
+      background-image: url(images/blog/blog-cover.jpg);
+      width: 100%;
+      height: 350px;
+      
+      background-size: cover;
+      background-position: center;
       display: flex;
      justify-content: center;
       text-align: center;
@@ -681,12 +697,80 @@ color: #0b0b0b;
     line-height: 25px;
   }
 
+/* =====blog-page======= */
+#blog{
+  padding:150px 150px 0 150px;
+}
+
+#blog .blog-box h4{
+  margin-right: 20px !important;
+}
 
  
-
+#blog .blog-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px;
+}
   
+#blog .blog-img{
+  width: 40%;
+  margin-right: 40px;
+}
+#blog img
+{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+#blog .blog-details{
+  width: 50%;
 
+}
 
+#blog .blog-details a{
+  text-decoration: none;
+  font-size: 18px;
+  color: #000000;
+  position: relative;
+  transition: 0.2s;
+}
+ 
+#blog .blog-details a::after
+{
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top:13px;
+  right:-60px;
+  transition: 0.2s;
+}
+
+#blog .blog-details a:hover::after
+{
+  background-color: rgb(250, 86, 113);
+}
+
+#blog .blog-details a:hover
+{
+  color:rgb(250, 86, 113);
+  
+}
+
+#blog .blog-box h1{
+  position: absolute;
+  top: -54px;
+  left: 0;
+  font-size: 80px;
+  font-weight: 700;
+  color: #c3c0c0;
+  z-index: -9;
+
+}
   /* ====styling footer==== */
   footer{
     display: flex;
